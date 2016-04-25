@@ -2,13 +2,10 @@
 
 # Part 1
 
-def sum arr
-  $i=0
-  $sum=0
-  while $i<arr.length do
-    $sum=$sum+arr.at($i)
-  end
-  return $sum
+def sum(arr)
+  sum = 0
+arr.each { |a| sum+=a }
+return sum
 end
 
 def max_2_sum arr
