@@ -8,7 +8,7 @@ def sum arr
   while $i<arr.length do
     $sum=$sum+arr.at($i)
   end
-  
+  return $sum
 end
 
 def max_2_sum arr
