@@ -3,7 +3,12 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  $i=0
+  $sum=0
+  while $i<arr.length do
+    $sum=$sum+arr.at($i)
+  end
+  
 end
 
 def max_2_sum arr
