@@ -100,14 +100,31 @@ end
 # Part 3
 
 class BookInStock
-    @isbn
-    @price
+    
     
     def initialize(isbn,price)
         @isbn=isbn
         @price=price
-        raise ArgumentError, "ArgumentError" isbn=="" || price<=0
+        raise ArgumentError, "ArgumentError" if isbn=="" || price<=0
     end
     
+    def isbn
+        @isbn
+    end
     
+     def isbn= (isbn)
+        @isbn=isbn
+    end
+    
+     def price
+        @price
+    end
+    
+     def price= (input)
+        @price=input
+    end
+    
+    def price_as_string
+        return "$"+format("%.2f",@price).to_s
+    end
 end
