@@ -58,15 +58,43 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
+  puts("Hello, "+name)
+  return "Hello, "+name
 end
 
 def starts_with_consonant? s
-  # YOUR CODE HERE
+    if s.length==0 then
+        return false
+    end
+    if s[0]<'A'||(s[0]>'Z'&&s[0]<'a')||s[0]>'z' then
+        return false
+    end
+  if s[0]=='a'||s[0]=='A'||s[0]=='e'||s[0]=='E'||s[0]=='i'||s[0]=='I'||s[0]=='o'||s[0]=='O'||s[0]=='u'||s[0]=='U' then
+      return false
+  else
+      return true
+  end
 end
 
 def binary_multiple_of_4? s
-  # YOUR CODE HERE
+    
+    if s=="0" then
+        return true
+    end
+ for i in 0..(s.length-1)
+    
+    if s[i]!='0' && s[i]!='1' then
+        
+        return false
+    end
+end
+
+if s[s.length-2]=='0'&&s[s.length-1]=='0' then
+    
+    return true
+else
+    return false
+end
 end
 
 # Part 3
